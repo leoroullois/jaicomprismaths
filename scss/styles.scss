@@ -1,0 +1,570 @@
+// IMPORTS
+@import "imports/_variables.scss";
+@import "imports/_mixins.scss";
+@import "imports/_extends.scss";
+
+// Helpers
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $roboto;
+  background-color: $lightWhite;
+  color: $lightBlack;
+  min-height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bar {
+  height: 2px;
+  background-color: $shadow;
+  width: 100%;
+  margin: 60px 0px 60px 0px;
+}
+
+// header = partie bleue claire en haut de page
+header {
+  width: 100%;
+  display: block;
+  height: 60px;
+  background-color: $blue;
+  // Mets le texte, logos sur la même ligne
+  section,img, h1, h2 {
+    display: inline-block;
+  }
+  // Défini la hauteur du header
+  section {
+    height: 60px;
+  }
+  // la classe .desc contient l'image "manuweb scolaire" et le texte à sa gauche
+  .desc {
+    @extend .w-xs-12 , .w-sm-12 , .w-md-9 , .w-lg-9 ;
+    float: right;
+    img {
+      height: 40px;
+      float:right;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    h2 {
+      font-size: 1.15em;
+      float: right;
+      line-height: 60px;
+      height: 60px;
+    }
+  }
+  // Logo ampoule + phrase d'accroche "jaicompris.com"
+  .logo {
+    @extend .w-xs-9 , .w-sm-9 , .w-md-3 , .w-lg-3 ;
+    float: left;
+    h1 {
+      height: 60px;
+      line-height: 60px;
+      margin-top: 0px;
+      float: left;
+      font-size: 1.5em;
+    }
+    img {
+      height: 50px;
+      float: left;
+      margin-top: 5px;
+      margin-right: 20px;
+    }
+  }
+  // FIN DU HEADER
+}
+// Adaptation téléphone du header
+@media screen and (max-width: 1099px) {
+  header {
+    // Augmente la hauteur car le texte passe à la ligne
+    height: 100px;
+    // Les deux sections .logo et .desc prennent une hauteur de 50px chacune pour se superposé et recouvrir la hauteur totale de 100px
+    section {
+      height: 50px;
+    }
+    // Ajustement et réduction de la taille du logo ampoule
+    .logo {
+      width: 80%;
+      img {
+        height: 40px;
+        margin-top: 5px;
+      }
+      h1 {
+        line-height: 50px;
+        height: 50px;
+      }
+    }
+    .desc {
+      // Fait passer .desc sur une seul ligne et quelques ajustements
+      width: 100%;
+      img{
+        height: 40px;
+        margin-top: 5px;
+      }
+      h2 {
+        float: left;
+        line-height: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 818px) {
+  // Masque .desc et passe le header sur une ligne de 50px
+  header {
+    height: 50px;
+  }
+  .desc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  // Diminue légèrement la taille d'écriture du header sur petits écrans
+  header .logo h1 {
+    font-size: 1.2em;
+  }
+}
+
+// MENU
+.topnav {
+  height: $navHeight;
+  background-color: $navBlack;
+  a {
+    margin: 0px 20px 0px 20px;
+    img {
+      height: 45px;
+      margin-top: 17.5px;
+      transform: scale(1);
+      transition: .2s;
+    }
+  }
+  // Effet de zoom sur les icônes du menu
+  a:hover {
+    img {
+      transition: .2s;
+      transform: scale(1.5);
+    }
+  }
+  .classes, .code {
+    display: inline-block;
+  }
+  // Icone hamburger qui se mets en place quand l'écran devient petit afin d'avoir un menu fonctionnel sur téléphones
+  .icon {
+    display: none;
+    height: 100%;
+    a {
+      font-size: 1.5em;
+      color: $lightBlack;
+    }
+  }
+  .classes_responsive {
+    display: none;
+    a {
+      margin-top: 10px;
+    }
+  }
+}
+.responsive {
+  display: block!important;
+  background-color: $navBlack;
+  .icon {
+    color:$lightWhite;
+  }
+  .classes_responsive {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+    //height: 380px;
+    background-color: $navBlack;
+    a {
+      display: block;
+      font-size: 1em;
+      color:$lightWhite;
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+    }
+    a:hover {
+      color: $red;
+      transition: .2s;
+    }
+  }
+}
+// Adaptation téléphone du menu
+@media screen and (max-width:768px) {
+  .topnav {
+    // mets en place l'icône hamburger
+    text-align: center;
+    .icon {
+      display: inline-block;
+      margin-top: 22px;
+      height: 36px;
+      a {
+        color: $lightWhite;
+        font-size: 30px;
+      }
+    }
+  }
+  // Masque le menu grand-écran
+  .topnav {
+    .devise, .code, .classes, .accueil {
+    display: none;
+    }
+  }
+}
+@media screen and (max-width: 940px) and (min-width:769px) {
+  // gère l'espacement entre les logos du menu selon la taille des écrans
+  .topnav {
+    a{
+      margin: 0px 5px 0px 5px;
+    }
+  }
+}
+@media screen and (min-width: 941px) and (max-width:1199px) {
+  // gère l'espacement entre les logos du menu selon la taille des écrans
+  .topnav {
+    a{
+      margin: 0px 10px 0px 10px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  // gère l'espacement entre les logos du menu selon la taille des écrans
+  .topnav {
+    a{
+      margin: 0px 25px 0px 25px;
+    }
+  }
+}
+
+// LANDING PAGE
+.landingPage {
+  @extend .wrapper;
+  padding: 30px 30px 0px 30px;
+  display: inline-block;
+  text-align: center;
+  height: 1000px;
+  .landingPageContent {
+    height: 400px;
+    .logo {
+      height: 2.5*$navHeight;
+      float: left;
+      margin-top: 30px;
+    }
+    .catchphrase {
+      float: right;
+      height: 400px;
+    }
+    h3 {
+      font-size: 2.5em;
+      text-align: center;
+    }
+  }
+  .landingPageContent2 {
+    h3 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    img {
+      height: 140px;
+    }
+    .cours {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      .coursImage {
+        display: block;
+        float: right;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-3 , .w-lg-3;
+        img {
+          float: right;
+        }
+      }
+      .coursTexte {
+       text-align: left;
+       float:left;
+       @extend .w-xs-12 , .w-sm-12 , .w-md-9 , .w-lg-9 ;
+       a {
+         margin-top: 20px;
+         text-transform: uppercase;
+         color: $lightBlue;
+         font-weight: 1000;
+         font-size: 1.5em;
+         float: left;
+         transition: .2s;
+         &:hover {
+           transition: .2s;
+           color: $darkBlue;
+         }
+       }
+      }
+    }
+    .exercices {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      .exercicesTexte {
+        display: inline-block;
+        float: right;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-9 , .w-lg-9;
+        h3 {
+          margin-bottom: 30px;
+        }
+      }
+      .exercicesImage {
+        display: inline-block;
+        margin: 30px 0px 0px 0px;
+        float: left;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-3 , .w-lg-3;
+      }
+      .exercicesImageExercice {
+        float: left;
+        display: inline-block;
+        margin-top: 30px;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-12 , .w-lg-12;
+        img {
+          display: inline-block;
+          @include box-shadow ;
+          height: 394*0.75px;
+          width: 855*0.75px;
+        }
+      }
+    }
+    .aide {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      .aideTexte {
+        float: right;
+        text-align: left;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-5 , .w-lg-5 ;
+        a {
+          display: inline-block;
+          margin: 20px 0px 20px 0px;
+          text-transform: uppercase;
+          color: $lightBlue;
+          font-weight: 1000;
+          font-size: 1.5em;
+          transition: .2s;
+          &:hover {
+            transition: .2s;
+            color: $darkBlue;
+          }
+        }
+      }
+      .aideImage {
+        float: left;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-2 , .w-lg-2;
+      }
+    }
+    .bac {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      text-align: left;
+      .bacTexte {
+        float: left;
+        text-align: left;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-9 , .w-lg-9;
+      }
+      .bacImage {
+        float: right;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-3 , .w-lg-3;
+      }
+    }
+    .calculatrice {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      text-align: left;
+      margin-bottom: 30px;
+      .calculatriceTexte {
+        float: right;
+        text-align: left;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-9 , .w-lg-9;
+        h3, p {
+          width: 60%;
+          float: right;
+        }
+      }
+      .calculatriceImage {
+        float: left;
+        @extend .w-xs-12 , .w-sm-12 , .w-md-3 , .w-lg-3;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .landingPageContent2 {
+    p {
+      font-size: 1em!important;
+    }
+    h3 {
+      font-size: 1.5em!important;
+    }
+    a {
+      font-size: 1.2em!important;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .exercices {
+    .exercicesTexte {
+      p, h3 {
+        width: 100%;
+        float: left;
+        text-align: left!important;
+      }
+    }
+    .exercicesImageExercice {
+      display: none!important;
+    }
+  }
+  .aide {
+    .aideImage {
+      margin-bottom: 30px;
+    }
+  }
+  .cours {
+    .coursImage {
+      float: none!important;
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      img {
+        margin-top: 30px;
+        float: none!important;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+  .bac {
+      .bacTexte {
+        float: none;
+        h3, p {
+          text-align: center;
+        }
+      }
+      .bacImage {
+        float: none;
+        margin-top: 30px;
+        img {
+          display: block;
+          @include center;
+        }
+      }
+  }
+  .calculatrice {
+    .calculatriceTexte {
+      h3,p {
+        width: 100%!important;
+      }
+    }
+    .calculatriceImage {
+      margin-top: 30px;
+      img {
+        display: block;
+        @include center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .exercices {
+    .exercicesTexte {
+      p, h3 {
+        width: 55%;
+        float: right;
+        text-align: left;
+      }
+    }
+  }
+}
+@media screen and (max-width: 940px) {
+  .landingPage {
+    .landingPageContent {
+      display: none;
+    }
+  }
+  .firstBar {
+    display: none;
+  }
+}
+
+// footer
+footer {
+  width: 100%;
+  background-color: $blue;
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  @include box-shadow ;
+  p {
+    text-align: center;
+  }
+  ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  .poitiers {
+    height: 100px;
+  }
+  .leftFooter {
+    float: left;
+    @extend .w-xs-12 , .w-sm-12 , .w-md-6 , .w-lg-6 ;
+    p {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: $lightBlack;
+      }
+      a:hover{
+        font-weight: 800;
+      }
+    }
+  }
+  .rightFooter {
+    float:right;
+    @extend .w-xs-12 , .w-sm-12 , .w-md-6 , .w-lg-6 ;
+  }
+  .EN {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    img {
+      margin-bottom: 20px;
+    }
+    img, p {
+      display: block;
+      @include center;
+    }
+  }
+}
+
+ion-icon {
+  color: $lightBlack;
+  font-size: 1em;
+}

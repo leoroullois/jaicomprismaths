@@ -1,0 +1,47 @@
+@import "../../scss/imports/_variables.scss";
+@import "../../scss/imports/_mixins.scss";
+@import "../../scss/imports/_extends.scss";
+
+.premiere_ligne {
+  td {
+    width: 50px;
+  }
+}
+table {
+  tr {
+    height: 50px;
+  }
+}
+.cours1__29 {
+  li {
+    margin-left: 0px!important;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .opened {
+    li {
+      width: auto!important;
+    }
+  }
+}
+
+.exercice2{
+  span {
+    display: inline-block;
+    width: 60px;
+  }
+}
+.exercice3 {
+  .exercice_container {
+    p {
+      display: inline-block;
+      width: auto;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  }
+}

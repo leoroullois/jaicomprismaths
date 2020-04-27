@@ -1,0 +1,155 @@
+// Centre un élément
+@mixin center {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+// Projette une ombre
+@mixin box-shadow {
+  box-shadow: 0px 0px 10px $shadow;
+}
+
+// Crée un bouton
+@mixin button($buttonHeight, $buttonWidth,$buttonColor,$buttonBgc,$buttonRadius) {
+  text-decoration: none;
+  text-transform: uppercase;
+  button {
+    display: block;
+    @include center;
+    height: $buttonHeight;
+    width: $buttonWidth;
+    color: $buttonColor;
+    background-color: $buttonBgc;
+    border-radius: $buttonRadius;
+    border: none;
+  }
+  button:hover {
+    transition-duration: 0.2s;
+    cursor:pointer;
+    @include box-shadow;
+  }
+}
+  /* USAGE
+  HTML:
+    <a href="#" class="button2">
+      <button type="button" name="plus">
+        Plus
+      </button>
+    </a>
+  */
+// Bouton vide avec bordure
+@mixin borderButton($buttonHeight, $buttonWidth,$buttonColor,$buttonRadius, $size, $type, $color) {
+  text-decoration: none;
+  text-transform: uppercase;
+  button {
+    display: block;
+    @include center;
+    height: $buttonHeight;
+    width: $buttonWidth;
+    color: $buttonColor;
+    background-color: none;
+    border-radius: $buttonRadius;
+    border: $size $type $color;
+  }
+  button:hover {
+    transition-duration: 0.2s;
+    cursor:pointer;
+    @include box-shadow;
+  }
+}
+
+// Reglage de l'opacité
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie); //IE8
+}
+  /* USAGE
+  .fade {
+    @include opacity(.4);
+  }
+  */
+
+// Positionnement
+@mixin position($position, $args) {
+  @each $o in top right bottom left {
+    $i: index($args, $o);
+    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
+      #{$o}: nth($args, $i + 1);
+    }
+  }
+  position: $position;
+}
+
+  // Positioning helpers
+@mixin absolute($args: '') {
+  @include position(absolute, $args);
+}
+
+@mixin fixed($args: '') {
+  @include position(fixed, $args);
+}
+
+@mixin relative($args: '') {
+  @include position(relative, $args);
+}
+  /* USAGE
+  .menu li {
+    @include relative;
+  }
+
+  .sub-menu {
+    @include absolute(top 100% left 0);
+  }
+
+  .sticky-bar {
+    @include fixed(top 0 left 0);
+  }
+  */
+
+// Responsive
+@mixin screen($size) {
+  $desktop: "(min-width: 1024px)";
+  $tablet: "(min-width: 768px) and (max-width: 1023px)";
+  $mobile: "(min-width: 481px) and (max-width: 767px)";
+  $minMobile: "(max-width: 480px)";
+  @if $size == desktop {
+    @media only screen and #{$desktop} {
+      @content;
+    }
+  }
+  @else if $size == tablet {
+    @media only screen and #{$tablet} {
+      @content;
+    }
+  }
+  @else if $size == mobile {
+    @media only screen and #{$mobile} {
+      @content;
+    }
+  }
+  @else if $size == xsMobile {
+    @media only screen and #{$minMobile} {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and #{$size} {
+      @content;
+    }
+  }
+}
+  /* USAGE
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    @include screen('tablet') {
+      width: 90%;
+    }
+
+    @include screen('desktop') {
+      width: 85%;
+    }
+  }
+  */
