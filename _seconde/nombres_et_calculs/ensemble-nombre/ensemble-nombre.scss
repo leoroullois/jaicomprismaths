@@ -1,10 +1,17 @@
-@import "../../scss/imports/_variables.scss";
-@import "../../scss/imports/_mixins.scss";
-@import "../../scss/imports/_extends.scss";
+@import "../../../scss/imports/_variables.scss";
+@import "../../../scss/imports/_mixins.scss";
+@import "../../../scss/imports/_extends.scss";
 
 .premiere_ligne {
   td {
     width: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  tr>td {
+    td {
+      width: auto;
+    }
   }
 }
 table {
@@ -12,21 +19,13 @@ table {
     height: 50px;
   }
 }
-.cours1__29 {
-  li {
-    margin-left: 0px!important;
-  }
-  img {
-    width: 100%;
-  }
-}
 
-@media screen and (max-width:480px) {
-  .opened {
-    li {
-      width: auto!important;
-    }
-  }
+.ytb {
+  color: $red!important;
+  opacity: 1!important;
+}
+.ytb_link:hover {
+  border-bottom: 1px solid $lightBlack;
 }
 
 .exercice2{

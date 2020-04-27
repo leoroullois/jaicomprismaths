@@ -200,6 +200,9 @@ HTML:
   }
 }
 */
+a {
+  color: #1d1d1d; }
+
 .sous-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,14 +277,21 @@ main {
   .cours article {
     display: inline-block !important;
     width: 80%; }
-    .cours article .principal p {
+    .cours article p {
+      text-align: justify; }
+    .cours article .principal > p::before {
+      content: "●";
       margin-left: 20px; }
-    .cours article .principal p::before {
-      content: "●"; }
+    .cours article .opened > p::before {
+      content: "➤ ";
+      margin-left: 20px; }
     .cours article h5 {
       margin-top: 10px;
-      text-align: left;
+      text-align: justify;
       font-size: 1.2em; }
+    .cours article h6 {
+      text-align: justify;
+      font-size: 1.1em; }
     .cours article .video {
       display: -webkit-box;
       display: -ms-flexbox;

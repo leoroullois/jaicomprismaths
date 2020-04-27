@@ -138,389 +138,389 @@
       <br>
       <article class="cours1">
         <div class="video">
-            <h5>
-              Cours : connaître les ensembles de nombres
-              <ion-icon name="logo-youtube"></ion-icon>
-            </h5>
+          <h5>
+            Cours : connaître les ensembles de nombres
+            <ion-icon name="logo-youtube"></ion-icon>
+          </h5>
         </div>
         <div class="principal">
           <!-- premier niveau -->
-          <div>
+          <p>
+            Entiers naturels
+            <!--<a name="eye" id="cours1_1" onclick="ouvrir('cours1_1')" href="#">👀</a>-->
+            <ion-icon onclick="ouvrir('cours1_1')" name="eye" id="cours1_1"></ion-icon>
+          </p>
+          <div class="closed">
+            <!-- Second niveau 1 -->
             <p>
-              Entiers naturels
-              <ion-icon onclick="ouvrir('cours1_1')" name="eye" id="cours1_1"></ion-icon>
+              Un entier naturel est un entier supérieur ou égal à 0. L'ensemble des entiers naturels est noté <span>$$ \mathbb{N} $$</span>
+              <ion-icon onclick="ouvrir('cours1__1')" name="eye" id="cours1__1"></ion-icon>
             </p>
             <div class="closed">
-              <!-- Second niveau 1 -->
-                <p>
-                  Un entier naturel est un entier supérieur ou égal à 0. L'ensemble des entiers naturels est noté <span>$$ \mathbb{N} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__1')" name="eye" id="cours1__1"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$ \mathbb{N}= \left\{ 0,1,2,... \right\} $$</span>
-                    </p>
-                </div>
-              <!-- Second niveau 2 -->
-                <p>
-                  3 est un entier naturel
-                  <ion-icon onclick="ouvrir('cours1__2')" name="eye" id="cours1__2"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>Car 3 est un entier supérieur à 0.</p>
-                </div>
-              <!-- Second niveau 3 -->
-                <p>
-                  On peut écrire <span>$$ 3 \in \mathbb{N} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__3')" name="eye" id="cours1__3"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$ \in $$</span> signifie "appartient"
-                    </p>
-                </div>
-              <!-- Second niveau 4 -->
-                <p>
-                  -3 n'est pas un entier naturel
-                  <ion-icon onclick="ouvrir('cours1__4')" name="eye" id="cours1__4"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      -3 est un entier mais n'est pas positif.
-                      Donc -3 n'est pas un entier naturel.
-                    </p>
-                </div>
-              <!-- Second niveau 5 -->
-                <p>
-                  On peut écrire <span>$$ -3 \notin \mathbb{N} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__5')" name="eye" id="cours1__5"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$ \notin $$</span> signifie "n'appartient pas"
-                    </p>
-                </div>
-            </div>
-          <!-- fin du premier niveau -->
-            <p>
-              Entiers relatifs
-              <ion-icon onclick="ouvrir('cours1_6')" name="eye" id="cours1_6"></ion-icon>
-            </p>
-            <div class="closed">
-                <p>
-                  Un entier relatif est un entier positif, négatif ou nul. L'ensemble des entiers relatifs est noté <span>$$ \mathbb{Z} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__6')" name="eye" id="cours1__6"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$ \mathbb{Z}= \left\{ ...,-2,-1,0,1,2,... \right\} $$</span>
-                    </p>
-                </div>
-                <p>
-                  3 est un entier relatif
-                  <ion-icon onclick="ouvrir('cours1__7')" name="eye" id="cours1__7"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      Car 3 est un entier positif.
-                    </p>
-                </div>
-                <br>
-                <p>
-                  On peut écrire 3 <span>$$ \in \mathbb{Z}$$</span>
-                  <ion-icon onclick="ouvrir('cours1__8')" name="eye" id="cours1__8"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$ \in $$</span> signifie "appartient"
-                    </p>
-                </div>
-                <p>
-                  -3 est un entier relatif
-                  <ion-icon onclick="ouvrir('cours1__9')" name="eye" id="cours1__9"></ion-icon>
-                </p>
-                <div class="closed">
-                    Car -3 est un entier négatif.
-                </div>
-                <br>
-                <p>
-                  On peut écrire -3 <span>$$ \in \mathbb{Z} $$</span>
-                </p>
-                <p>
-                  0,5 n'est pas un entier relatif
-                  <ion-icon onclick="ouvrir('cours1__10')" name="eye" id="cours1__10"></ion-icon>
-                </p>
-                <ul class="closed">
-                    Car 0,5 n'est pas un entier.
-                </ul>
-                <br>
-                <p>
-                  On peut écrire 0,5 <span>$$ \notin \mathbb{Z} $$</span>
-                </p>
-            </div>
-            <p>
-              Nombre décimaux
-              <ion-icon onclick="ouvrir('cours1_11')" name="eye" id="cours1_11"></ion-icon>
-            </p>
-            <div class="closed">
-                <p>
-                  Un nombre décimal est nombre qui peut s'écrire avec un nombre fini de chiffre derrière la virgule.
-                  <br><span>$$\Leftrightarrow$$</span>
-                  <br>Un nombre décimal est un nombre qui peut s'écrire <span>$$ \frac{a}{10^{n}} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__11')" name="eye" id="cours1__11"></ion-icon>
-                </p>
-                <div class="closed">
-                    avec a entier relatif
-                    <br>n entier naturel
-                </div>
-                <p>
-                  L'ensemble des décimaux est noté <span>$$ \mathbb{D}$$</span>
-                </p>
-                <p>
-                  2,23 est un nombre décimal. On peut écrire <span>$$ 2,23 \in \mathbb{D} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__12')" name="eye" id="cours1__12"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$ \in $$</span> signifie "appartient"
-                    </p>
-                </div>
-                <p>
-                  3 est un nombre décimal. On peut écrire <span>$$ 3 \in \mathbb{D} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__13')" name="eye" id="cours1__13"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>
-                    Car 3 peut s'écrire 3,0.
-                  </p>
-                </div>
-                <p>
-                  <span>$$ \frac{1}{3} $$</span> n'est pas un nombre décimal.
-                  <ion-icon onclick="ouvrir('cours1__14')" name="eye" id="cours1__14"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>
-                    voir démonstration en vidéo
-                  </p>
-                </div>
-                <p>
-                  <br>On peut écrire <span>$$ \frac{1}{3} \notin \mathbb{D} $$</span>
-                </p>
-            </div>
-            <p>
-              Nombres rationnels
-              <ion-icon onclick="ouvrir('cours1_15')" name="eye" id="cours1_15"></ion-icon>
-            </p>
-            <div class="closed">
-                <p>
-                  Un nombre rationnel est un nombre qui peut s'écrire sous la forme <span>$$ \frac{p}{q}</span>
-                  <br> L'ensemble des rationnels est noté <span>$$ \mathbb{Q} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__15')" name="eye" id="cours1__15"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      où p et q sont des entiers relatifs.
-                      <ion-icon onclick="ouvrir('cours1___15')" name="eye" id="cours1___15"></ion-icon>
-                    </p>
-                    <div class="closed">
-                      <p>
-                        q est non nul, car il est au dénominateur.
-                      </p>
-                    </div>
-                </div>
-                <p>
-                  3 est un nombre rationnel
-                  <ion-icon onclick="ouvrir('cours1__16')" name="eye" id="cours1__16"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      Car 3 peut s'écrire <span>$$ \frac{3}{1} $$</span>
-                    </p>
-                </div>
-                <br>
-                <p>
-                  On peut écrire <span>$$ 3 \in \mathbb{Q} $$</span>
-                </p>
-                <p>
-                  2,23 est un nombre rationnel
-                  <ion-icon onclick="ouvrir('cours1__17')" name="eye" id="cours1__17"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      Car 2,23 peut s'écrire <span>$$ \frac{223}{100} $$</span>
-                    </p>
-                </div>
-                <br>
-                <p>
-                  On peut écrire <span>$$ 2,23 \in \mathbb{Q} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__18')" name="eye" id="cours1__18"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$ \in $$</span> signifie "appartient"
-                    </p>
-                </div>
-                <p>
-                  <span>$$ -\frac{5}{3}$$</span> est un nombre rationnel
-                  <ion-icon onclick="ouvrir('cours1__19')" name="eye" id="cours1__19"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      car <span>$$ -\frac{5}{3} $$</span> peut s'écrire <span>$$ \frac{-5}{3} $$</span>
-                    </p>
-                </div>
-                <br>
-                <p>
-                  On peut écrire <span>$$ \frac{-5}{3} \in \mathbb{Q}$$</span>
-                </p>
-                <p>
-                  <span>$$ \sqrt{2} $$</span> n'est pas un nombre rationnel
-                  <ion-icon onclick="ouvrir('cours1__20')" name="eye" id="cours1__20"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      Car on ne peut pas l'écrire sous la forme <span>$$\frac{p}{q}$$</span> avec p et q entiers.
-                      <br>Voir démonstration très importante en vidéo.
-                    </p>
-                </div>
-            </div>
-            <p>
-              Nombres irrationnels
-              <ion-icon onclick="ouvrir('cours1_21')" name="eye" id="cours1_21"></ion-icon>
-            </p>
-            <div class="closed">
-                <p>
-                  Un nombre irrationnel est un nombre réel qui n'est pas rationnel, c'est à dire qui ne peut pas s'écrire sous la forme <span>$$ \frac{p}{q}$$</span>
-                  <ion-icon onclick="ouvrir('cours1__21')" name="eye" id="cours1__21"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>
-                    où p et q sont des entiers relatifs.
-                  </p>
-                </div>
-                <p>
-                  Irrationnels classiques:
-                  <br>
-                  <span>$$ \sqrt{2} $$</span>
-                  <ion-icon onclick="ouvrir('cours1__22')" name="eye" id="cours1__22"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      Car on ne peut pas l'écrire sous la forme <span>$$ \frac{p}{q} $$</span> avec p et q entiers. Voir démonstration très importante en vidéo.
-                    </p>
-                </div>
-                <p>
-                  <span>$$ \pi $$</span>
-                  <ion-icon onclick="ouvrir('cours1__23')" name="eye" id="cours1__23"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      Car on ne peut pas l'écrire sous la forme <span>$$ \frac{p}{q} $$</span> avec p et q entiers
-                    </p>
-                </div>
-            </div>
-            <p>
-              Nombres réels
-              <ion-icon onclick="ouvrir('cours1_24')" name="eye" id="cours1_24"></ion-icon>
-            </p>
-            <div class="closed">
-                <p>
-                  On considère une droite munie d'un repère.
-                  Un nombre est réel s'il correspond à l'abscisse d'un point de cette droite.
-                  L'ensemble des nombres réels est noté <span>$$ \mathbb{R} $$</span>
-                </p>
-                <img src="../../../images/reel.png" alt="Droite réelle">
-                <p>
-                  2 est un nombre réel
-                  <ion-icon onclick="ouvrir('cours1__25')" name="eye" id="cours1__25"></ion-icon>
-                </p>
-                <div class="closed">
-                    2 correspond à un point de la droite
-                </div>
-                <p>
-                  On peut écrire <span>$$ 2 \in \mathbb{R} $$</span>
-                </p>
-                <p>
-                  -1,2 est un nombre réel
-                  <ion-icon onclick="ouvrir('cours1__26_1')" name="eye" id="cours1__26_1"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>
-                    -1,2 correspond à un point de la droite
-                  </p>
-                </div>
-                <p>
-                  On peut écrire <span>$$ -1.2\in \mathbb{R}$$</span>
-                  <ion-icon onclick="ouvrir('cours1__26_2')" name="eye" id="cours1__26_2"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$\in$$</span> signifie "appartient"
-                    </p>
-                </div>
-                <p>
-                  <span>$$\frac{5}{3}$$</span> est un nombre réel
-                  <ion-icon onclick="ouvrir('cours1__27')" name="eye" id="cours1__27"></ion-icon>
-                </p>
-                <div class="closed">
-                    <p>
-                      <span>$$ \frac{5}{3} $$</span> correspond à un point de la droite
-                    </p>
-                </div>
-                <p>
-                  On peut écrire <span>$$ \frac{5}{3} \in \mathbb{R}$$</span>
-                </p>
-                <p>
-                  <span>$$sqrt{2}$$</span> et <span>$$ \pi $$</span> sont des nombres Réels
-                  <ion-icon onclick="ouvrir('cours1__28')" name="eye" id="cours1__28"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>
-                    Ils correspondent à des points de la droite
-                  </p>
-                </div>
               <p>
-                En fait tous les nombres que vous connaissez en seconde, correspondent tous à des points de la droite. Et donc sont réels.
-                Donc tous les nombres que vous connaissez en seconde sont réels.
-                Pourtant vous verrez plus tard que les points à l'exterieur de la droite correspondent aussi à des nombres mais qui ne sont pas réels et qu'on appelle nombres complexes
+                <span>$$ \mathbb{N}= \left\{ 0,1,2,... \right\} $$</span>
+              </p>
+            </div>
+            <!-- Second niveau 2 -->
+            <p>
+              3 est un entier naturel
+              <ion-icon onclick="ouvrir('cours1__2')" name="eye" id="cours1__2"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>Car 3 est un entier supérieur à 0.</p>
+            </div>
+            <!-- Second niveau 3 -->
+            <p>
+              On peut écrire <span>$$ 3 \in \mathbb{N} $$</span>
+              <ion-icon onclick="ouvrir('cours1__3')" name="eye" id="cours1__3"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                <span>$$ \in $$</span> signifie "appartient"
+              </p>
+            </div>
+            <!-- Second niveau 4 -->
+            <p>
+              -3 n'est pas un entier naturel
+              <ion-icon onclick="ouvrir('cours1__4')" name="eye" id="cours1__4"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                -3 est un entier mais n'est pas positif.
+                Donc -3 n'est pas un entier naturel.
+              </p>
+            </div>
+            <!-- Second niveau 5 -->
+            <p>
+              On peut écrire <span>$$ -3 \notin \mathbb{N} $$</span>
+              <ion-icon onclick="ouvrir('cours1__5')" name="eye" id="cours1__5"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                <span>$$ \notin $$</span> signifie "n'appartient pas"
+              </p>
+            </div>
+          </div>
+          <!-- fin du premier niveau -->
+          <p>
+            Entiers relatifs
+            <ion-icon onclick="ouvrir('cours1_6')" name="eye" id="cours1_6"></ion-icon>
+          </p>
+          <div class="closed">
+            <p>
+              Un entier relatif est un entier positif, négatif ou nul. L'ensemble des entiers relatifs est noté <span>$$ \mathbb{Z} $$</span>
+              <ion-icon onclick="ouvrir('cours1__6')" name="eye" id="cours1__6"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                <span>$$ \mathbb{Z}= \left\{ ...,-2,-1,0,1,2,... \right\} $$</span>
               </p>
             </div>
             <p>
-              Schéma à connaître
-              <ion-icon onclick="ouvrir('cours1__29')" name="eye" id="cours1__29"></ion-icon>
+              3 est un entier relatif
+              <ion-icon onclick="ouvrir('cours1__7')" name="eye" id="cours1__7"></ion-icon>
             </p>
             <div class="closed">
-                <img src="../../../images/schema-ensemble.png" alt="Schéma ensemble">
+              <p>
+                Car 3 est un entier positif.
+              </p>
+            </div>
+            <br>
+            <p>
+              On peut écrire 3 <span>$$ \in \mathbb{Z}$$</span>
+              <ion-icon onclick="ouvrir('cours1__8')" name="eye" id="cours1__8"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                <span>$$ \in $$</span> signifie "appartient"
+              </p>
             </div>
             <p>
-              Nature d'un nombre
-              <ion-icon onclick="ouvrir('cours1_30')" name="eye" id="cours1_30"></ion-icon>
+              -3 est un entier relatif
+              <ion-icon onclick="ouvrir('cours1__9')" name="eye" id="cours1__9"></ion-icon>
             </p>
             <div class="closed">
-                <p>
-                  Donner la nature d'un nombre c'est dire le plus petit ensemble auquel ce nombre appartient.
-                  <br>
-                  Exemple: donner la nature de sqrt(225)/6
-                  <ion-icon onclick="ouvrir('cours1__30')" name="eye" id="cours1__30"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>
-                    <span>$$ \frac{\sqrt{225}}{6}=2,5$$</span> donc <span>$$\frac{\sqrt{225}}{6} \in \mathbb{D}$$</span>
-                  </p>
-                </div>
+              Car -3 est un entier négatif.
+            </div>
+            <br>
+            <p>
+              On peut écrire -3 <span>$$ \in \mathbb{Z} $$</span>
+            </p>
+            <p>
+              0,5 n'est pas un entier relatif
+              <ion-icon onclick="ouvrir('cours1__10')" name="eye" id="cours1__10"></ion-icon>
+            </p>
+            <ul class="closed">
+              Car 0,5 n'est pas un entier.
+            </ul>
+            <br>
+            <p>
+              On peut écrire 0,5 <span>$$ \notin \mathbb{Z} $$</span>
+            </p>
+          </div>
+          <p>
+            Nombre décimaux
+            <ion-icon onclick="ouvrir('cours1_11')" name="eye" id="cours1_11"></ion-icon>
+          </p>
+          <div class="closed">
+            <p>
+              Un nombre décimal est nombre qui peut s'écrire avec un nombre fini de chiffre derrière la virgule.
+              <br><span>$$\Leftrightarrow$$</span>
+              <br>Un nombre décimal est un nombre qui peut s'écrire <span>$$ \frac{a}{10^{n}} $$</span>
+              <ion-icon onclick="ouvrir('cours1__11')" name="eye" id="cours1__11"></ion-icon>
+            </p>
+            <div class="closed">
+              avec a entier relatif
+              <br>n entier naturel
             </div>
             <p>
-              Ne pas confondre <span>$$ \in $$</span> et <span>$$ \subset $$</span>
-              <ion-icon onclick="ouvrir('cours1_31')" name="eye" id="cours1_31"></ion-icon>
+              L'ensemble des décimaux est noté <span>$$ \mathbb{D}$$</span>
+            </p>
+            <p>
+              2,23 est un nombre décimal. On peut écrire <span>$$ 2,23 \in \mathbb{D} $$</span>
+              <ion-icon onclick="ouvrir('cours1__12')" name="eye" id="cours1__12"></ion-icon>
             </p>
             <div class="closed">
-                <p>
-                  Pour dire qu'un élèment a appartient à un ensemble A on écrit: a <span>$$ \in $$</span> A
-                </p>
-                <p>
-                  Pour dire qu'un ensemble A est inclus dans un ensemble B on écrit: A <span>$$ \subset $$</span> B
-                </p>
+              <p>
+                <span>$$ \in $$</span> signifie "appartient"
+              </p>
             </div>
+            <p>
+              3 est un nombre décimal. On peut écrire <span>$$ 3 \in \mathbb{D} $$</span>
+              <ion-icon onclick="ouvrir('cours1__13')" name="eye" id="cours1__13"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Car 3 peut s'écrire 3,0.
+              </p>
+            </div>
+            <p>
+              <span>$$ \frac{1}{3} $$</span> n'est pas un nombre décimal.
+              <ion-icon onclick="ouvrir('cours1__14')" name="eye" id="cours1__14"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                voir démonstration en vidéo
+              </p>
+            </div>
+            <p>
+              <br>On peut écrire <span>$$ \frac{1}{3} \notin \mathbb{D} $$</span>
+            </p>
+          </div>
+          <p>
+            Nombres rationnels
+            <ion-icon onclick="ouvrir('cours1_15')" name="eye" id="cours1_15"></ion-icon>
+          </p>
+          <div class="closed">
+            <p>
+              Un nombre rationnel est un nombre qui peut s'écrire sous la forme <span>$$ \frac{p}{q}</span>
+              <br> L'ensemble des rationnels est noté <span>$$ \mathbb{Q} $$</span>
+              <ion-icon onclick="ouvrir('cours1__15')" name="eye" id="cours1__15"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                où p et q sont des entiers relatifs.
+                <ion-icon onclick="ouvrir('cours1___15')" name="eye" id="cours1___15"></ion-icon>
+              </p>
+              <div class="closed">
+                <p>
+                  q est non nul, car il est au dénominateur.
+                </p>
+              </div>
+            </div>
+            <p>
+              3 est un nombre rationnel
+              <ion-icon onclick="ouvrir('cours1__16')" name="eye" id="cours1__16"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Car 3 peut s'écrire <span>$$ \frac{3}{1} $$</span>
+              </p>
+            </div>
+            <br>
+            <p>
+              On peut écrire <span>$$ 3 \in \mathbb{Q} $$</span>
+            </p>
+            <p>
+              2,23 est un nombre rationnel
+              <ion-icon onclick="ouvrir('cours1__17')" name="eye" id="cours1__17"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Car 2,23 peut s'écrire <span>$$ \frac{223}{100} $$</span>
+              </p>
+            </div>
+            <br>
+            <p>
+              On peut écrire <span>$$ 2,23 \in \mathbb{Q} $$</span>
+              <ion-icon onclick="ouvrir('cours1__18')" name="eye" id="cours1__18"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                <span>$$ \in $$</span> signifie "appartient"
+              </p>
+            </div>
+            <p>
+              <span>$$ -\frac{5}{3}$$</span> est un nombre rationnel
+              <ion-icon onclick="ouvrir('cours1__19')" name="eye" id="cours1__19"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                car <span>$$ -\frac{5}{3} $$</span> peut s'écrire <span>$$ \frac{-5}{3} $$</span>
+              </p>
+            </div>
+            <br>
+            <p>
+              On peut écrire <span>$$ \frac{-5}{3} \in \mathbb{Q}$$</span>
+            </p>
+            <p>
+              <span>$$ \sqrt{2} $$</span> n'est pas un nombre rationnel
+              <ion-icon onclick="ouvrir('cours1__20')" name="eye" id="cours1__20"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Car on ne peut pas l'écrire sous la forme <span>$$\frac{p}{q}$$</span> avec p et q entiers.
+                <br>Voir démonstration très importante en vidéo.
+              </p>
+            </div>
+          </div>
+          <p>
+            Nombres irrationnels
+            <ion-icon onclick="ouvrir('cours1_21')" name="eye" id="cours1_21"></ion-icon>
+          </p>
+          <div class="closed">
+            <p>
+              Un nombre irrationnel est un nombre réel qui n'est pas rationnel, c'est à dire qui ne peut pas s'écrire sous la forme <span>$$ \frac{p}{q}$$</span>
+              <ion-icon onclick="ouvrir('cours1__21')" name="eye" id="cours1__21"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                où p et q sont des entiers relatifs.
+              </p>
+            </div>
+            <p>
+              Irrationnels classiques:
+              <br>
+              <span>$$ \sqrt{2} $$</span>
+              <ion-icon onclick="ouvrir('cours1__22')" name="eye" id="cours1__22"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Car on ne peut pas l'écrire sous la forme <span>$$ \frac{p}{q} $$</span> avec p et q entiers. Voir démonstration très importante en vidéo.
+              </p>
+            </div>
+            <p>
+              <span>$$ \pi $$</span>
+              <ion-icon onclick="ouvrir('cours1__23')" name="eye" id="cours1__23"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Car on ne peut pas l'écrire sous la forme <span>$$ \frac{p}{q} $$</span> avec p et q entiers
+              </p>
+            </div>
+          </div>
+          <p>
+            Nombres réels
+            <ion-icon onclick="ouvrir('cours1_24')" name="eye" id="cours1_24"></ion-icon>
+          </p>
+          <div class="closed">
+            <p>
+              On considère une droite munie d'un repère.
+              Un nombre est réel s'il correspond à l'abscisse d'un point de cette droite.
+              L'ensemble des nombres réels est noté <span>$$ \mathbb{R} $$</span>
+            </p>
+            <img src="../../../images/reel.png" alt="Droite réelle">
+            <p>
+              2 est un nombre réel
+              <ion-icon onclick="ouvrir('cours1__25')" name="eye" id="cours1__25"></ion-icon>
+            </p>
+            <div class="closed">
+              2 correspond à un point de la droite
+            </div>
+            <p>
+              On peut écrire <span>$$ 2 \in \mathbb{R} $$</span>
+            </p>
+            <p>
+              -1,2 est un nombre réel
+              <ion-icon onclick="ouvrir('cours1__26_1')" name="eye" id="cours1__26_1"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                -1,2 correspond à un point de la droite
+              </p>
+            </div>
+            <p>
+              On peut écrire <span>$$ -1.2\in \mathbb{R}$$</span>
+              <ion-icon onclick="ouvrir('cours1__26_2')" name="eye" id="cours1__26_2"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                <span>$$\in$$</span> signifie "appartient"
+              </p>
+            </div>
+            <p>
+              <span>$$\frac{5}{3}$$</span> est un nombre réel
+              <ion-icon onclick="ouvrir('cours1__27')" name="eye" id="cours1__27"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                <span>$$ \frac{5}{3} $$</span> correspond à un point de la droite
+              </p>
+            </div>
+            <p>
+              On peut écrire <span>$$ \frac{5}{3} \in \mathbb{R}$$</span>
+            </p>
+            <p>
+              <span>$$sqrt{2}$$</span> et <span>$$ \pi $$</span> sont des nombres Réels
+              <ion-icon onclick="ouvrir('cours1__28')" name="eye" id="cours1__28"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Ils correspondent à des points de la droite
+              </p>
+            </div>
+            <p>
+              En fait tous les nombres que vous connaissez en seconde, correspondent tous à des points de la droite. Et donc sont réels.
+              Donc tous les nombres que vous connaissez en seconde sont réels.
+              Pourtant vous verrez plus tard que les points à l'exterieur de la droite correspondent aussi à des nombres mais qui ne sont pas réels et qu'on appelle nombres complexes
+            </p>
+          </div>
+          <p>
+            Schéma à connaître
+            <ion-icon onclick="ouvrir('cours1__29')" name="eye" id="cours1__29"></ion-icon>
+          </p>
+          <div class="closed">
+            <img src="../../../images/schema-ensemble.png" alt="Schéma ensemble">
+          </div>
+          <p>
+            Nature d'un nombre
+            <ion-icon onclick="ouvrir('cours1_30')" name="eye" id="cours1_30"></ion-icon>
+          </p>
+          <div class="closed">
+            <p>
+              Donner la nature d'un nombre c'est dire le plus petit ensemble auquel ce nombre appartient.
+              <br>
+              Exemple: donner la nature de sqrt(225)/6
+              <ion-icon onclick="ouvrir('cours1__30')" name="eye" id="cours1__30"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                <span>$$ \frac{\sqrt{225}}{6}=2,5$$</span> donc <span>$$\frac{\sqrt{225}}{6} \in \mathbb{D}$$</span>
+              </p>
+            </div>
+          </div>
+          <p>
+            Ne pas confondre <span>$$ \in $$</span> et <span>$$ \subset $$</span>
+            <ion-icon onclick="ouvrir('cours1_31')" name="eye" id="cours1_31"></ion-icon>
+          </p>
+          <div class="closed">
+            <p>
+              Pour dire qu'un élèment a appartient à un ensemble A on écrit: a <span>$$ \in $$</span> A
+            </p>
+            <p>
+              Pour dire qu'un ensemble A est inclus dans un ensemble B on écrit: A <span>$$ \subset $$</span> B
+            </p>
+          </div>
         </div>
       </article>
       <article class="cours2">
@@ -532,117 +532,117 @@
         </div>
         <div class="principal">
           <!-- Premier niveau -->
+          <p>
+            Méthodes
+            <ion-icon onclick="ouvrir('cours2_1')" name="eye" id="cours2_1"></ion-icon>
+          </p>
+          <div class="closed">
+            <h6>
+              Montrer qu'un nombre est décimal
+            </h6>
             <p>
-              Méthodes
-              <ion-icon onclick="ouvrir('cours2_1')" name="eye" id="cours2_1"></ion-icon>
+              Méthode 1: Montrer qu'il peut s'écrire avec un nombre fini de chiffre derrière la virgule
+              <ion-icon onclick="ouvrir('cours2__1')" name="eye" id="cours2__1"></ion-icon>
             </p>
             <div class="closed">
-                <h6>
-                  Montrer qu'un nombre est décimal
-                </h6>
-                <p>
-                  Méthode 1: Montrer qu'il peut s'écrire avec un nombre fini de chiffre derrière la virgule
-                  <ion-icon onclick="ouvrir('cours2__1')" name="eye" id="cours2__1"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>
-                    Par exemple 2,25 est un nombre décimal car il y a un nombre fini de chiffre après la virgule
-                  </p>
-                </div>
-                <p>
-                  Méthode 2: Montrer qu'il peut s'écrire sous la forme <span>$$ \frac{a}{10^{n}}$$</span>
-                  <ion-icon onclick="ouvrir('cours2__2')" name="eye" id="cours2__2"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>avec a entier relatif et n entier naturel.</p>
-                  <br>
-                  <p>
-                    Par exemple: 2,25 est un entier décimal car <span>$$2,25= \frac{225}{100} = \frac{225}{10^{2}}$$</span>
-                  </p>
-                </div>
-                <h6>
-                  Montrer qu'un nombre n'est pas décimale
-                </h6>
-                <p>
-                  Méthode: Montrer qu'il ne peut pas s'écrire <span>$$ \frac{a}{10^{n}}$$</span>
-                  <ion-icon onclick="ouvrir('cours2__3')" name="eye" id="cours2__3"></ion-icon>
-                </p>
-                <div class="closed">
-                  <p>
-                    On utilise souvent un raisonnement par l'absurde:
-                    <br>On suppose que le nombre peut s'écrire sous la forme <span>$$ \frac{a}{10^{n}}$$</span>
-                    <br>Puis on montre que l'on aboutit à une contradiction
-                    <ion-icon onclick="ouvrir('cours2___1')" name="eye" id="cours2___1"></ion-icon>
-                  </p>
-                  <div class="closed">
-                    <p>
-                      Pour cela, on utilise souvent la décomposition en facteur premier.
-                    </p>
-                  </div>
-                </div>
-            </div>
-            <p>
-              <span>$$ \frac{1}{3} $$</span> n'est pas décimal
-              <ion-icon name="logo-youtube"></ion-icon>
-              <ion-icon onclick="ouvrir('cours2_2')" name="eye" id="cours2_2"></ion-icon>
-            </p>
-            <div class="closed">
-                <ion-icon name="alert"></ion-icon> Démo à faire!
-            </div>
-            <p>
-              Piège avec les décimaux
-              <ion-icon onclick="ouvrir('cours2_3')" name="eye" id="cours2_3"></ion-icon>
-            </p>
-            <div class="closed">
-              <h6>Si le nombre est écrit avec un nombre de chiffres derrière la virgule</h6>
               <p>
-                fini <span>$$ \Rightarrow $$</span> Le nombre est décimal
-                <ion-icon onclick="ouvrir('cours2__4')" name="eye" id="cours2__4"></ion-icon>
+                Par exemple 2,25 est un nombre décimal car il y a un nombre fini de chiffre après la virgule
+              </p>
+            </div>
+            <p>
+              Méthode 2: Montrer qu'il peut s'écrire sous la forme <span>$$ \frac{a}{10^{n}}$$</span>
+              <ion-icon onclick="ouvrir('cours2__2')" name="eye" id="cours2__2"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>avec a entier relatif et n entier naturel.</p>
+              <br>
+              <p>
+                Par exemple: 2,25 est un entier décimal car <span>$$2,25= \frac{225}{100} = \frac{225}{10^{2}}$$</span>
+              </p>
+            </div>
+            <h6>
+              Montrer qu'un nombre n'est pas décimale
+            </h6>
+            <p>
+              Méthode: Montrer qu'il ne peut pas s'écrire <span>$$ \frac{a}{10^{n}}$$</span>
+              <ion-icon onclick="ouvrir('cours2__3')" name="eye" id="cours2__3"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                On utilise souvent un raisonnement par l'absurde:
+                <br>On suppose que le nombre peut s'écrire sous la forme <span>$$ \frac{a}{10^{n}}$$</span>
+                <br>Puis on montre que l'on aboutit à une contradiction
+                <ion-icon onclick="ouvrir('cours2___1')" name="eye" id="cours2___1"></ion-icon>
               </p>
               <div class="closed">
                 <p>
-                  Par exemple: 132,25
-                  <br>Il y a 2 chiffres après la virgule
-                  <br>Le nombre de chiffre derrière la virgule est donc fini
-                  <br>Donc 132,25 est un nombre décimal.
-                </p>
-              </div>
-              <p>
-                infini <span>$$ \Rightarrow $$</span> Le nombre peut être décimal ou pas
-                <ion-icon onclick="ouvrir('cours2__5')" name="eye" id="cours2__5"></ion-icon>
-              </p>
-              <div class="closed">
-                <p>
-                  Autrement dit, on ne peut rien conclure!
-                  <p>
-                    0,333... n'est pas un nombre décimale
-                    <ion-icon onclick="ouvrir('cours2___2')" name="eye" id="cours2___2"></ion-icon>
-                  </p>
-                  <div class="closed">
-                    Voir la vidéo: <span>$$ \frac{1}{3} $$</span> n'est pas décimale
-                  </div>
-                  <p>
-                    0,999... est un nombre décimale
-                    <ion-icon onclick="ouvrir('cours2___3')" name="eye" id="cours2___3"></ion-icon>
-                  </p>
-                  <div class="closed">
-                    Car on démontre que 0,999...=1
-                    <br>Or 1 est un entier, donc un décimale!
-                    <a href="#">
-                      Voir la vidéo 0,999...=1
-                      <ion-icon name="logo-youtube"></ion-icon>
-                    </a>
-                  </div>
+                  Pour cela, on utilise souvent la décomposition en facteur premier.
                 </p>
               </div>
             </div>
+          </div>
+          <p>
+            <ion-icon class="ytb" name="logo-youtube"></ion-icon>
+            <span>$$ \frac{1}{3} $$</span> n'est pas décimal
+            <ion-icon onclick="ouvrir('cours2_2')" name="eye" id="cours2_2"></ion-icon>
+          </p>
+          <div class="closed">
+            ❗ Démo à faire!
+          </div>
+          <p>
+            Piège avec les décimaux
+            <ion-icon onclick="ouvrir('cours2_3')" name="eye" id="cours2_3"></ion-icon>
+          </p>
+          <div class="closed">
+            <h6>Si le nombre est écrit avec un nombre de chiffres derrière la virgule</h6>
+            <p>
+              fini <span>$$ \Rightarrow $$</span> Le nombre est décimal
+              <ion-icon onclick="ouvrir('cours2__4')" name="eye" id="cours2__4"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Par exemple: 132,25
+                <br>Il y a 2 chiffres après la virgule
+                <br>Le nombre de chiffre derrière la virgule est donc fini
+                <br>Donc 132,25 est un nombre décimal.
+              </p>
+            </div>
+            <p>
+              infini <span>$$ \Rightarrow $$</span> Le nombre peut être décimal ou pas
+              <ion-icon onclick="ouvrir('cours2__5')" name="eye" id="cours2__5"></ion-icon>
+            </p>
+            <div class="closed">
+              <p>
+                Autrement dit, on ne peut rien conclure!
+              </p>
+                <p>
+                  0,333... n'est pas un nombre décimale
+                  <ion-icon onclick="ouvrir('cours2___2')" name="eye" id="cours2___2"></ion-icon>
+                </p>
+                <div class="closed">
+                  Voir la vidéo: <span>$$ \frac{1}{3} $$</span> n'est pas décimale
+                </div>
+                <p>
+                  0,999... est un nombre décimale
+                  <ion-icon onclick="ouvrir('cours2___3')" name="eye" id="cours2___3"></ion-icon>
+                </p>
+                <div class="closed">
+                  Car on démontre que 0,999...=1
+                  <br>Or 1 est un entier, donc un décimale!
+                  <a class="ytb_link" href="#">
+                    Voir la vidéo 0,999...=1
+                    <ion-icon class="ytb" name="logo-youtube"></ion-icon>
+                  </a>
+                </div>
+            </div>
+          </div>
         </div>
       </article>
       <article class="cours3">
         <div class="video">
-            <h5>
-              Cours: Savoir démontrer que <span>$$ \sqrt{2} $$</span> est irrationnel <ion-icon name="logo-youtube"></ion-icon>
-            </h5>
+          <h5>
+            Cours: Savoir démontrer que <span>$$ \sqrt{2} $$</span> est irrationnel <ion-icon name="logo-youtube"></ion-icon>
+          </h5>
         </div>
       </article>
       <article class="cours4">
@@ -742,7 +742,7 @@
               <td></td>
             </tr>
             <tr>
-              <td lang="latex">$$\frac{3}{4}$$</td>
+              <td>$$\frac{3}{4}$$</td>
               <td></td>
               <td></td>
               <td></td>
@@ -794,25 +794,44 @@
           <p>
             Donner la nature des nombres suivants, sans utiliser de calculatrice:
             <div>
-              <span>
-                $$\frac{-84}{14}$$
-              </span>
-              <span>
-                5,1
-              </span>
-              <span>
-                $$10^{3}$$
-              </span>
-              <span>
-                $$\frac{1,26}{18}$$
-              </span>
-              <span>
-                $$\frac{7}{21}$$
-              </span>
-              <span>
-                $$\sqrt{2}-\frac{2}{\sqrt{2}}$$
-              </span>
-            </div </p>
+              <p>
+                a)
+                <span>
+                  $$\frac{-84}{14}$$
+                </span>
+              </p>
+               <p>
+                 b)
+                <span>
+                  5,1
+                </span>
+               </p>
+               <p>
+                 c)
+                <span>
+                  $$10^{3}$$
+                </span>
+               </p>
+               <p>
+                 d)
+                <span>
+                  $$\frac{1,26}{18}$$
+                </span>
+               </p>
+               <p>
+                 e)
+                <span>
+                  $$\frac{7}{21}$$
+                </span>
+               </p>
+               <p>
+                 f)
+                <span>
+                  $$\sqrt{2}-\frac{2}{\sqrt{2}}$$
+                </span>
+               </p>
+            </div>
+           </p>
         </div>
       </article>
       <article class="exercice3">

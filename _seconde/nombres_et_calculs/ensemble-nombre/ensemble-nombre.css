@@ -196,17 +196,19 @@ HTML:
 .premiere_ligne td {
   width: 50px; }
 
+@media screen and (max-width: 480px) {
+  tr > td td {
+    width: auto; } }
 table tr {
   height: 50px; }
 
-.cours1__29 li {
-  margin-left: 0px !important; }
-.cours1__29 img {
-  width: 100%; }
+.ytb {
+  color: #c0392b !important;
+  opacity: 1 !important; }
 
-@media screen and (max-width: 480px) {
-  .opened li {
-    width: auto !important; } }
+.ytb_link:hover {
+  border-bottom: 1px solid #1d1d1d; }
+
 .exercice2 span {
   display: inline-block;
   width: 60px; }
@@ -216,5 +218,3 @@ table tr {
   width: auto;
   padding-left: 2%;
   padding-right: 2%; }
-
-/*# sourceMappingURL=ensemble-nombre.css.map */
