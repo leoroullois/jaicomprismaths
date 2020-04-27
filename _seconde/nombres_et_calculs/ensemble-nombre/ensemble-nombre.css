@@ -193,6 +193,12 @@ HTML:
 
   .w-lg-12 {
     width: 100%; } }
+table {
+  border-collapse: collapse; }
+
+td {
+  border: 1px solid #1d1d1d; }
+
 .premiere_ligne td {
   width: 50px; }
 

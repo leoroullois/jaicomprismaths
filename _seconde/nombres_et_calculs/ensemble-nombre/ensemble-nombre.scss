@@ -2,6 +2,13 @@
 @import "../../../scss/imports/_mixins.scss";
 @import "../../../scss/imports/_extends.scss";
 
+table {
+  border-collapse:collapse;
+}
+td {
+  border: 1px solid $lightBlack;
+}
+
 .premiere_ligne {
   td {
     width: 50px;

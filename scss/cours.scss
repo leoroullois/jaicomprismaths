@@ -229,15 +229,27 @@ main {
     }
   }
 }
+@media screen and (max-width: 480px) {
+  .temps, .difficulte {
+    display: inline-block!important;
+    width: auto!important;
+  }
+  .temps {
+    max-width: 50px!important;
+  }
+  .difficulte {
+    max-width: 150px!important;
+    margin-bottom: 21px!important;
+    margin-left: 20px!important;
+  }
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+  .difficulte_temps {
+    margin-bottom: 20px!important;
+  }
+}
 .exercices article:not(:last-child){
   border-bottom: 2px solid rgba(255,255,255,0.5);
-}
-
-table {
-  border-collapse:collapse;
-}
-td {
-  border: 1px solid $lightBlack;
 }
 
 //MathJax-script
