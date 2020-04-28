@@ -108,7 +108,7 @@ main {
     }
     .opened > p::before {
       content:"➤ ";
-      margin-left: 20px;
+      //margin-left: 20px;
     }
     h5 {
       margin-top: 10px;
@@ -139,9 +139,9 @@ main {
 
 .opened {
   display: inline-block!important;
-  text-align: center;
+  text-align: left;
   width: 95%!important;
-  padding: 10px 0px;
+  padding: 10px 20px;
   margin: 5px 0px;
   @include box-shadow;
   background-color: rgba(0, 0, 0, 0.1);
@@ -271,4 +271,25 @@ h5 {
       margin: 0px!important;
     }
   }
+}
+
+.center {
+  display: block;
+  @include center ;
+}
+.newline {
+  display: block;
+}
+.no-before:before {
+  content:none!important;
+}
+
+.opened > img {
+  display: block;
+  @include center ;
+  max-width: 98%;
+}
+.underline {
+  display: inline-block;
+  text-decoration: underline;
 }

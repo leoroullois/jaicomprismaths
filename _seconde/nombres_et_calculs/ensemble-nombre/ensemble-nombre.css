@@ -215,11 +215,7 @@ table tr {
 .ytb_link:hover {
   border-bottom: 1px solid #1d1d1d; }
 
-.exercice2 span {
-  display: inline-block;
-  width: 60px; }
-
-.exercice3 .exercice_container p {
+.exercice_container p {
   display: inline-block;
   width: auto;
   padding-left: 2%;
