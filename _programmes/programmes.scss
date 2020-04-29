@@ -1,0 +1,41 @@
+@import "../scss/imports/_variables.scss";
+@import "../scss/imports/_mixins.scss";
+@import "../scss/imports/_extends.scss";
+
+fieldset {
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 30px;
+  @extend .wrapper ;
+  legend {
+    padding: 0px 15px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  ul li {
+    display: inline-block;
+    width: 100%;
+  }
+  ul li a {
+    color: $lightBlack;
+    float: left;
+  }
+  a:before {
+    content:"•";
+  }
+  div {
+    display: inline-block;
+    height: auto;
+    img {
+      height: 40px;
+      vertical-align: middle;
+    }
+    p {
+      display: inline-block;
+      line-height: 40px;
+    }
+  }
+}
+.nobefore:before {
+  content: none;
+}
