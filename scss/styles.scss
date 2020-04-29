@@ -518,7 +518,7 @@ header {
 // footer
 footer {
   width: 100%;
-  background-color: $blue;
+  background-color: $fond2;
   display: inline-block;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -533,24 +533,6 @@ footer {
   .poitiers {
     height: 100px;
   }
-  .leftFooter {
-    float: left;
-    @extend .w-xs-12 , .w-sm-12 , .w-md-6 , .w-lg-6 ;
-    p {
-      display: inline-block;
-      a {
-        text-decoration: none;
-        color: $lightBlack;
-      }
-      a:hover{
-        font-weight: 800;
-      }
-    }
-  }
-  .rightFooter {
-    float:right;
-    @extend .w-xs-12 , .w-sm-12 , .w-md-6 , .w-lg-6 ;
-  }
   .EN {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -562,7 +544,31 @@ footer {
       @include center;
     }
   }
+  .footer-images {
+    section {
+      display: inline-block;
+      width: auto;
+      margin: 10px 20px;
+    }
+    img {
+      vertical-align: middle;
+    }
+    .gratuit {
+      width: 100px;
+    }
+    .fb, .twitter {
+      width: 50px;
+    }
+    .ytb {
+      width: 80px;
+    }
+    .satisfait {
+      width: 120px;
+    }
+  }
 }
+
+
 
 ion-icon {
   color: $lightBlack;
