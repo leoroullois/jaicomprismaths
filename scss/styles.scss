@@ -570,16 +570,16 @@ footer {
   }
 }
 
-.ptest {
-  display: none;
-}
-
 ion-icon {
   color: $lightBlack;
   font-size: 1em;
 }
 
-#utile, #contact, #qui, #liens {
+.dropdown-container {
+  display: inline-block;
+  width: 100%;
+}
+.dropdown {
   display: inline-block;
   float: left;
   @extend .w-xs-12 , .w-sm-12 , .w-md-6 , .w-lg-3;
@@ -605,6 +605,7 @@ ion-icon {
 .dropdown-hover:hover + .dropdown-child , .dropdown-child:hover {
   height: auto;
   width: auto;
+  @include box-shadow;
   padding: 15px;
   background-color: $lightWhite;
   h6 {
@@ -613,5 +614,38 @@ ion-icon {
   ul {
     list-style-type: disc;
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dropdown {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .dropdown-hover {
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+  }
+  .dropdown-hover:hover + .dropdown-child , .dropdown-child:hover {
+    float: left;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .dropdown {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+  }
+  .dropdown-hover {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+  .dropdown-hover:hover + .dropdown-child , .dropdown-child:hover {
+    float: center;
+    width: 50%;
   }
 }
