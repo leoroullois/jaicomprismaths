@@ -42,7 +42,10 @@ main {
       //padding-bottom: 3px;
       //padding-top: 3px;
       p {
+        border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
         height: auto;
+        display: inline-block;
+        width: 100%;
         span {
           display: inline-flex;
           mjx-container {
@@ -54,6 +57,7 @@ main {
     a:hover {
       @include box-shadow;
       background-color: rgba(0, 0, 0, 0.1);
+      transition: all .1s;
     }
     ion-icon {
       font-size: 1.5em;
