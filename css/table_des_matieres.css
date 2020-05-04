@@ -226,9 +226,10 @@ main article {
     color: #1d1d1d;
     display: inline-block;
     width: 95%;
-    margin: 5px 0px; }
+    margin: 5px 0px;
+    padding: 0px 15px; }
     main article a p {
-      border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
       height: auto;
       display: inline-block;
       width: 100%; }

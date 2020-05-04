@@ -39,10 +39,11 @@ main {
       display: inline-block;
       width: 95%;
       margin: 5px 0px;
+      padding: 0px 15px;
       //padding-bottom: 3px;
       //padding-top: 3px;
       p {
-        border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
         height: auto;
         display: inline-block;
         width: 100%;
