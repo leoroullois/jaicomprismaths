@@ -159,7 +159,7 @@ header {
   a:hover {
     img {
       transition: .2s;
-      transform: scale(1.5);
+      transform: scale(1.6);
     }
   }
   .classes, .code {
@@ -529,8 +529,9 @@ footer {
     text-align: center;
   }
   ul {
+    margin: 20px 0px;
     display: inline-block;
-    list-style-type: none;
+    text-align: left;
   }
   .poitiers {
     height: 100px;

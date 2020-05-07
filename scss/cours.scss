@@ -102,6 +102,38 @@ main {
     p {
       text-align: justify;
     }
+    .definition {
+      display: inline-block;
+      padding:  5px 10px;
+      color: $lightWhite;
+      background-color: $def;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .theoreme {
+      display: inline-block;
+      padding: 5px 10px;
+      color: $lightWhite;
+      background-color: $theoreme;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .bulb {
+      display: inline-block;
+      height: 20px;
+      width: auto;
+      vertical-align:middle;
+      &:hover {
+        cursor:pointer;
+      }
+    }
+    .principal > p {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .opened > p {
+      padding: 5px 0px;
+    }
     .principal > p::before {
       content:"●";
       margin-left: 20px;
@@ -122,15 +154,19 @@ main {
     .video {
       //float: right;
       display: flex;
-      ion-icon {
-        color: $red;
-        opacity: 1;
+      img {
+        display: inline-block;
+        height: 30px;
+        width: auto;
+        vertical-align: middle;
       }
     }
     .video::before {
       content:"★";
       margin-right: 10px;
-      padding-top: 10px;
+      padding-top: 15px;
+      display: inline-block;
+      vertical-align: middle;
     }
   }
   @include box-shadow;
@@ -292,4 +328,8 @@ h5 {
 .underline {
   display: inline-block;
   text-decoration: underline;
+  background-color: $cours;
+  color: $lightWhite;
+  padding: 5px 10px;
+  border-radius: 5px;
 }

@@ -303,8 +303,8 @@ header {
   .topnav a:hover img {
     -webkit-transition: .2s;
     transition: .2s;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5); }
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6); }
   .topnav .classes, .topnav .code {
     display: inline-block; }
   .topnav .icon {
@@ -559,8 +559,9 @@ footer {
   footer p {
     text-align: center; }
   footer ul {
+    margin: 20px 0px;
     display: inline-block;
-    list-style-type: none; }
+    text-align: left; }
   footer .poitiers {
     height: 100px; }
   footer .EN {

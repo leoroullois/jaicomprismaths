@@ -14,9 +14,9 @@ function ouvrir(id) {
   var z = y.nextElementSibling
   if (z.className === "closed") {
     z.className ="opened";
-    x.setAttribute("name", "eye-off");
+    x.setAttribute("src", "../../../images/ferme_r.png");
   } else {
     z.className="closed";
-    x.setAttribute("name", "eye");
+    x.setAttribute("src", "../../../images/bulb.png");
   }
 }

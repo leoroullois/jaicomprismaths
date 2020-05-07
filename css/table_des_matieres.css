@@ -229,7 +229,7 @@ main article {
     margin: 5px 0px;
     padding: 0px 15px; }
     main article a p {
-      border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
       height: auto;
       display: inline-block;
       width: 100%; }

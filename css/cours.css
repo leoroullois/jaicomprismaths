@@ -279,6 +279,32 @@ main {
     width: 80%; }
     .cours article p {
       text-align: justify; }
+    .cours article .definition {
+      display: inline-block;
+      padding: 5px 10px;
+      color: #fafafa;
+      background-color: #ff524f;
+      font-weight: bold;
+      border-radius: 5px; }
+    .cours article .theoreme {
+      display: inline-block;
+      padding: 5px 10px;
+      color: #fafafa;
+      background-color: #54b86b;
+      font-weight: bold;
+      border-radius: 5px; }
+    .cours article .bulb {
+      display: inline-block;
+      height: 20px;
+      width: auto;
+      vertical-align: middle; }
+      .cours article .bulb:hover {
+        cursor: pointer; }
+    .cours article .principal > p {
+      font-weight: bold;
+      font-size: 1.1em; }
+    .cours article .opened > p {
+      padding: 5px 0px; }
     .cours article .principal > p::before {
       content: "●";
       margin-left: 20px; }
@@ -295,13 +321,17 @@ main {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .cours article .video ion-icon {
-        color: #c0392b;
-        opacity: 1; }
+      .cours article .video img {
+        display: inline-block;
+        height: 30px;
+        width: auto;
+        vertical-align: middle; }
     .cours article .video::before {
       content: "★";
       margin-right: 10px;
-      padding-top: 10px; }
+      padding-top: 15px;
+      display: inline-block;
+      vertical-align: middle; }
 
 .opened {
   display: inline-block !important;
@@ -440,4 +470,8 @@ h5 {
 
 .underline {
   display: inline-block;
-  text-decoration: underline; }
+  text-decoration: underline;
+  background-color: #519cda;
+  color: #fafafa;
+  padding: 5px 10px;
+  border-radius: 5px; }
