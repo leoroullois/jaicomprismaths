@@ -1,0 +1,100 @@
+@import "../scss/imports/_variables.scss";
+@import "../scss/imports/_mixins.scss";
+@import "../scss/imports/_extends.scss";
+
+// SOUS-MENU maths expertes etc
+main {
+  .filiere-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  #filiere-term {
+    display: inline-block;
+    max-width: 90%;
+    background-color: $cours;
+    color: $lightWhite;
+    padding: 15px 15px;
+    border-radius: 5px;
+  }
+  article {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 280px;
+  max-width: 300px;
+  height:60px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(0,0,0,0.4);
+  border-bottom: 3px solid rgba(0,0,0,0.2);
+}
+
+label:before {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: "";
+  background: url("../images/svg/002-symbol.svg") no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+label[for*='2']:before {
+  content: "";
+  background: url("../images/svg/006-function.svg") no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+label[for*='3']:before {
+  content: "";
+  background: url("../images/svg/007-infinity.svg") no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+label:hover {
+  color: $cours_titre;
+  border-bottom: 3px solid rgba(0,0,0,0.4);
+  transition: all .2s;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 3px solid $cours_titre;
+}
+
+.tab1:checked ~ .spe,
+.tab2:checked ~ .spe,
+.tab2:checked ~ .complementaire,
+.tab3:checked ~ .spe,
+.tab3:checked ~ .complementaire,
+.tab3:checked ~ .experte {
+  display: block;
+}
+}

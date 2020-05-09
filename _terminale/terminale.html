@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../css/table_des_matieres.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="terminale.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Spectral&display=swap" rel="stylesheet">
 </head>
@@ -117,10 +117,21 @@
     <!-- Fin du menu ici -->
   </nav>
   <main>
-    <h3>
-      Cours de Mathématiques - Terminale S
-    </h3>
-    <article>
+    <input class="tab1" id="tab1" type="radio" name="tabs" checked>
+      <label onclick="spe()" for="tab1">Spécialité maths</label>
+
+      <input class="tab2" id="tab2" type="radio" name="tabs">
+      <label onclick="complementaire()" for="tab2">Maths complémentaires</label>
+
+      <input class="tab3" id="tab3" type="radio" name="tabs">
+      <label onclick="experte()" for="tab3">Maths expertes</label>
+      <div class="filiere-container">
+        <h3 id="filiere-term">
+          Spécialité mathématiques - Terminale
+        </h3>
+      </div>
+
+    <article class="spe" class="complementaire" class="experte">
       <div>
         <h4>
           Suite
@@ -153,7 +164,7 @@
         </a>
       </div>
     </article>
-    <article>
+    <article class="spe" class="complementaire" class="experte">
       <div>
         <h4>
           Fonction
@@ -276,7 +287,7 @@
         </a>
       </div>
     </article>
-    <article>
+    <article class="complementaire" class="experte">
       <div>
         <h4>
           Géométrie - Espace
@@ -321,7 +332,7 @@
         </a>
       </div>
     </article>
-    <article>
+    <article class="complementaire" class="experte">
       <div>
         <h4>
           Nombres complexes
@@ -366,7 +377,7 @@
         </a>
       </div>
     </article>
-    <article>
+    <article class="experte">
       <div>
         <h4>
           Probabilité - statistique
@@ -459,7 +470,7 @@
         </a>
       </div>
     </article>
-    <article>
+    <article class="experte">
       <div>
         <h4>
           Spé Maths

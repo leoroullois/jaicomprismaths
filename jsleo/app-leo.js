@@ -20,3 +20,19 @@ function ouvrir(id) {
     x.setAttribute("src", "../../../images/bulb.png");
   }
 }
+
+function spe() {
+  var y = document.getElementById("filiere-term");
+  y.innerHTML = "Mathématiques spécialité - Terminale";
+  y.style.backgroundColor = "rgb(81, 156, 218)";
+}
+function complementaire() {
+  var y = document.getElementById("filiere-term");
+  y.innerHTML = "Mathématiques complémentaire - Terminale";
+  y.style.backgroundColor = "#ff524f";
+}
+function experte() {
+  var y = document.getElementById("filiere-term");
+  y.innerHTML = "Mathématiques expertes - Terminale";
+  y.style.backgroundColor = "#54b86b";
+}
